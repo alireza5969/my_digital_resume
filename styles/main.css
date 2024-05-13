@@ -150,12 +150,17 @@ li{
 
 }
 
-.card--work-history{
-    
-    margin-top: 3em;
-    margin-bottom: 3em;
-    padding-left: 2em;
-}
+.card--work-history {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .card--work-history strong {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
 .line-break{
     background-color: var(--mainBorderColor);
@@ -196,6 +201,13 @@ li{
     font-weight: bold;
     text-align: right;
     line-height: 0;
+}
+
+.work-place{
+    font-weight: normal;
+    text-align: right;
+    line-height: 0;
+    font-style: italic; 
 }
 
 .custom-list {
