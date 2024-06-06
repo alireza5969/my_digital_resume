@@ -237,3 +237,8 @@ li{
     height: 100px;
     background-color: black;
   }
+  @media screen and (max-width: 600px) {
+    .card--work-history strong {
+      display: block;
+    }
+  }
