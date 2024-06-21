@@ -203,6 +203,12 @@ li{
     line-height: 0;
 }
 
+.journal{
+
+    font-style: italic;
+
+}
+
 .work-place{
     font-weight: normal;
     text-align: right;
