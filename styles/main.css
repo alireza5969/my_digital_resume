@@ -171,6 +171,17 @@ a {
     height: 1px;
 }
 
+.framed-text {
+    border: 2px solid #2b30315f;
+    /* Adjust the border thickness and color as needed */
+    padding: 5px;
+    /* Add some padding inside the frame */
+    width: fit-content;
+    /* Adjust the width to fit the content */
+    margin: 5px;
+    /* Add some margin around the frame */
+}
+
 
 @media(max-width:600px) {
 
