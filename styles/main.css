@@ -3,89 +3,92 @@
 
 
 
-:root{
-    --mainTextColor-light:#000;
-    --secondaryTextColor-light:rgb(51 51 51);
-    --mainLinkColor-light:#0da2b8;
-    --mainBorderColor-light:rgb(218, 218, 218);
-    --mainBgColor-light:rgb(249, 250,251);
+:root {
+    --mainTextColor-light: #000;
+    --secondaryTextColor-light: rgb(51 51 51);
+    --mainLinkColor-light: #0da2b8;
+    --mainBorderColor-light: rgb(218, 218, 218);
+    --mainBgColor-light: rgb(249, 250, 251);
 
-    --mainTextColor-dark:#fff;
-    --secondaryTextColor-dark:#adb0b1;
-    --mainLinkColor-dark:rgb(30, 190,214);
-    --mainBorderColor-dark:#2b3031;
-    --mainBgColor-dark:#131415;
-    
-    --mainTextColor:var(--mainTextColor-light); 
-    --secondaryTextColor:(--secondaryTextColor-light);
-    --mainLinkColor:var(--mainLinkColor-light);
-    --mainBorderColor:var(--mainBorderColor-light);
-    --mainBgColor:var(--mainBgColor-light);
+    --mainTextColor-dark: #fff;
+    --secondaryTextColor-dark: #adb0b1;
+    --mainLinkColor-dark: rgb(30, 190, 214);
+    --mainBorderColor-dark: #2b3031;
+    --mainBgColor-dark: #131415;
+
+    --mainTextColor: var(--mainTextColor-light);
+    --secondaryTextColor: (--secondaryTextColor-light);
+    --mainLinkColor: var(--mainLinkColor-light);
+    --mainBorderColor: var(--mainBorderColor-light);
+    --mainBgColor: var(--mainBgColor-light);
 
 }
 
 
-*{
-    font-family: 'Readex Pro','Open Sans','Calibri',Arial,sans-serif;
+* {
+    font-family: 'Readex Pro', 'Open Sans', 'Calibri', Arial, sans-serif;
     line-height: 1.5em;
     box-sizing: border-box;
     color: var(--mainTextColor);
-    
+
 }
 
-body{
-    background-color: var(--mainBgColor);            
+body {
+    background-color: var(--mainBgColor);
 }
 
-p, span, li{
+p,
+span,
+li {
     color: var(--secondaryTextColor);
     font-size: 1em;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--mainLinkColor);
     font-weight: 500;
 }
 
-li{
+li {
     line-height: 1.9em;
 }
 
-#container--main{
+#container--main {
     max-width: 700px;
     margin: 0 auto;
     padding: 1em;
 }
 
-.section--page{
+.section--page {
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
-#wrapper--hero{
+#wrapper--hero {
     display: flex;
     align-items: center;
     gap: 4em;
 }
 
-#bio, a{
+#bio,
+a {
     font-weight: 300;
 }
 
-#user-name{
+#user-name {
     font-size: 48px;
     line-height: .5em;
 }
 
-#profile-pic{
+#profile-pic {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-#email{
+#email {
     color: var(--mainTextColor);
 }
 
@@ -102,52 +105,52 @@ li{
     background-color: #cfcccc41;
 }
 
-#socials--list a{
+#socials--list a {
     font-weight: 300;
     color: var(--secondaryTextColor);
     font-size: 0.9em;
     transition: 0.3s;
 }
 
-#socials--list a:hover{
+#socials--list a:hover {
     font-weight: 100;
     color: var(--mainLinkColor);
     font-size: 0.9em;
 }
 
-#qualifications--list{
+#qualifications--list {
     list-style: none;
 }
 
-#wrapper--techstack__items{
+#wrapper--techstack__items {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
     font-size: 0.9em;
 }
 
-.card--techstack{
+.card--techstack {
     border: 1px solid var(--mainBorderColor);
     border-radius: 5px;
     padding: 0.5em 1em;
     align-items: center;
 }
 
-.card--project{
+.card--project {
     padding-top: 1em;
     padding-bottom: 1em;
     border-bottom: 1px solid var(--mainBorderColor);
     line-height: 0;
 }
 
-.card--project a{
+.card--project a {
     color: var(--mainTextColor);
 
     transition: 0.3s;
 }
 
-.card--project a:hover{
-    color: rgb(30, 190,214);
+.card--project a:hover {
+    color: rgb(30, 190, 214);
 
 }
 
@@ -155,97 +158,102 @@ li{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  
-  .card--work-history strong {
+}
+
+.card--work-history strong {
     width: 100%;
     display: flex;
     justify-content: space-between;
-  }
+}
 
-.line-break{
+.line-break {
     background-color: var(--mainBorderColor);
     height: 1px;
 }
 
 
-@media(max-width:600px){
+@media(max-width:600px) {
 
-    .section--page{
+    .section--page {
         padding-top: 1em;
         padding-bottom: 1em;
     }
 
-    #wrapper--hero{
+    #wrapper--hero {
         display: flex;
         align-items: center;
         gap: 1em;
     }
 
-    #profile-pic{
+    #profile-pic {
         width: 200px;
         height: 200px;
     }
 
-    #wrapper--hero{
+    #wrapper--hero {
         flex-direction: column;
     }
 
-    .card--work-history{
+    .card--work-history {
         border-left: none;
         padding-left: 0;
     }
 }
 
-.role{
+.role {
 
     font-weight: bold;
     text-align: right;
     line-height: 0;
+    color: #0da1b89c;
+
 }
 
-.journal{
+.journal {
 
     font-style: italic;
 
 }
 
-.work-place{
+.work-place {
     font-weight: normal;
     text-align: right;
     line-height: 0;
-    font-style: italic; 
+    font-style: italic;
 }
 
 .custom-list {
     counter-reset: my-counter;
     list-style-type: none;
     padding-left: 0;
-  }
-  
-  .custom-list li {
+}
+
+.custom-list li {
     margin-bottom: 10px;
-  }
-  
-  .custom-list li::before {
+}
+
+.custom-list li::before {
     content: "[" counter(my-counter) "]";
     counter-increment: my-counter;
-    margin-right: 5px; /* Adjust as needed */
-  }
-  
-  .custom-list li {
-    text-indent: -20px; /* Adjust indentation width as needed */
-  }
+    margin-right: 5px;
+    /* Adjust as needed */
+}
 
-  .vertical-line::before{
+.custom-list li {
+    text-indent: -20px;
+    /* Adjust indentation width as needed */
+}
+
+.vertical-line::before {
     content: "";
     display: block;
     width: 1px;
     height: 100px;
     background-color: black;
-  }
-  @media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 600px) {
     .card--work-history strong {
-      display: block;
+        display: block;
     }
-  }
+}
