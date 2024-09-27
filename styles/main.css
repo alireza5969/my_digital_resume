@@ -7,7 +7,7 @@
     --mainTextColor-light: #000;
     --secondaryTextColor-light: rgb(51 51 51);
     --mainLinkColor-light: #0da2b8;
-    --mainBorderColor-light: rgb(218, 218, 218);
+    --mainBorderColor-light: rgb(4, 4, 4);
     --mainBgColor-light: rgb(249, 250, 251);
 
     --mainTextColor-dark: #fff;
@@ -101,8 +101,8 @@ a {
     border-radius: 5px;
     padding: 0.5em 1em;
     align-items: center;
-
-    background-color: #cfcccc41;
+    background-color: #cfcccc00;
+    color: #C00000;
 }
 
 #socials--list a {
