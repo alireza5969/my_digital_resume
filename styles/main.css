@@ -108,14 +108,14 @@ a {
 #socials--list a {
     font-weight: 300;
     color: var(--secondaryTextColor);
-    font-size: 1em;
+    font-size: 1.5em;
     transition: 0.3s;
 }
 
 #socials--list a:hover {
     font-weight: 100;
     color: var(--mainLinkColor);
-    font-size: 1em;
+    font-size: 2em;
 }
 
 #qualifications--list {
