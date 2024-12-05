@@ -21,7 +21,6 @@
     --mainLinkColor: var(--mainLinkColor-light);
     --mainBorderColor: var(--mainBorderColor-light);
     --mainBgColor: var(--mainBgColor-light);
-
 }
 
 
@@ -217,6 +216,15 @@ a {
     text-align: right;
     line-height: 0;
     color: #0da1b89c;
+
+}
+
+.under-review {
+
+    font-weight: bold;
+    text-align: left;
+    line-height: 0;
+    color: #b80d469c;
 
 }
 
