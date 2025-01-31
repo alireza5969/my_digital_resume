@@ -276,3 +276,9 @@ a {
         display: block;
     }
 }
+
+.esperanto-star {
+    color: #009900;
+    margin-left: 4px;
+    font-size: large;
+}
