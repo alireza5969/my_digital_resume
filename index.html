@@ -22,6 +22,19 @@
 </head>
 
 <body>
+
+    <h1>My H-index: <span id="h-index">Loading...</span></h1>
+
+    <script>
+        fetch('/assets/perfs/hindex.txt')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('h-index').textContent = text.trim();
+            });
+
+    </script>
+
+
     <div id="container--main">
 
         <section id="wrapper--hero" class="section--page">
@@ -92,17 +105,9 @@
                 <li>✔ <b>Epidemiology</b><br> trials · cohorts · case-controls · case-cohort · nested&nbsp;case-controls
                     · diagnostic&nbsp;test&nbsp;accuracy · research&nbsp;leadership </li>
                 <li>✔ <b><span id="h-index">Hindex</span></b></li>
-                <script>
-                    fetch('/assets/perfs/hindex.txt')
-                        .then(response => response.text())
-                        .then(text => {
-                            document.getElementById('h-index').textContent = text.trim();
-                        });
-
-                </script>
             </ul>
-
         </section>
+
         <div class="line-break"></div>
         <section class="section--page">
             <h2>Passions</h2>
