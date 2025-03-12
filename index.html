@@ -78,6 +78,7 @@
             }
         </style>
 
+
         <section class="section--page">
             <h2>Skills & Qualifications</h2>
             <ul id="qualifications--list">
@@ -90,7 +91,17 @@
                     scraping</li><br>
                 <li>✔ <b>Epidemiology</b><br> trials · cohorts · case-controls · case-cohort · nested&nbsp;case-controls
                     · diagnostic&nbsp;test&nbsp;accuracy · research&nbsp;leadership </li>
+                <li>✔ <b><span id="h-index">Hindex</span></b></li>
+                <script>
+                    fetch('/assets/perfs/hindex.txt')
+                        .then(response => response.text())
+                        .then(text => {
+                            document.getElementById('h-index').textContent = text.trim();
+                        });
+
+                </script>
             </ul>
+
         </section>
         <div class="line-break"></div>
         <section class="section--page">
